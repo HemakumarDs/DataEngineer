@@ -1,0 +1,17 @@
+{
+	"name": "blobstoragelnkservicekeycault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "blob-storage-conn-details"
+			}
+		}
+	}
+}
